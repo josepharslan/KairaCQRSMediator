@@ -1,0 +1,27 @@
+﻿@model CreateTestimonialCommand
+@{
+    ViewData["Title"] = "CreateTestimonial";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+
+<div class="card-body">
+    <h5 class="card-title fw-semibold mb-4">Referans Ekleme</h5>
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">Ad Soyad</label>
+                    <input type="text" asp-for="NameSurname" class="form-control">
+                    <span asp-validation-for="NameSurname" class="form-text text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Yorum</label>
+                    <textarea asp-for="Comment" class="form-control"></textarea>
+                    <span asp-validation-for="Comment" class="form-text text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>

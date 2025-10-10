@@ -1,0 +1,226 @@
+﻿<div class="search-popup">
+    <div class="search-popup-container">
+
+        <form role="search" method="get" class="form-group" action="">
+            <input type="search" id="search-form" class="form-control border-0 border-bottom"
+                   placeholder="Yazın ve Enter’a basın" value="" name="s" />
+            <button type="submit" class="search-submit border-0 position-absolute bg-white"
+                    style="top: 15px;right: 15px;">
+                <svg class="search" width="24" height="24">
+                    <use xlink:href="#search"></use>
+                </svg>
+            </button>
+        </form>
+
+        <h5 class="cat-list-title">Kategorilere Göz At</h5>
+
+        <ul class="cat-list">
+            <li class="cat-list-item">
+                <a href="#" title="Ceketler">Ceketler</a>
+            </li>
+            <li class="cat-list-item">
+                <a href="#" title="Tişörtler">Tişörtler</a>
+            </li>
+            <li class="cat-list-item">
+                <a href="#" title="Çantalar">Çantalar</a>
+            </li>
+            <li class="cat-list-item">
+                <a href="#" title="Aksesuarlar">Aksesuarlar</a>
+            </li>
+            <li class="cat-list-item">
+                <a href="#" title="Kozmetik">Kozmetik</a>
+            </li>
+            <li class="cat-list-item">
+                <a href="#" title="Elbiseler">Elbiseler</a>
+            </li>
+            <li class="cat-list-item">
+                <a href="#" title="Tulumlar">Tulumlar</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="Sepetim">
+    <div class="offcanvas-header justify-content-center">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Kapat"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Sepetiniz</span>
+                <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0">Elma şarabı</h6>
+                        <small class="text-body-secondary">Kısa açıklama</small>
+                    </div>
+                    <span class="text-body-secondary">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0">Taze üzüm</h6>
+                        <small class="text-body-secondary">Kısa açıklama</small>
+                    </div>
+                    <span class="text-body-secondary">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                        <h6 class="my-0">Heinz domates ketçabı</h6>
+                        <small class="text-body-secondary">Kısa açıklama</small>
+                    </div>
+                    <span class="text-body-secondary">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Toplam (USD)</span>
+                    <strong>$20</strong>
+                </li>
+            </ul>
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Ödemeye Devam Et</button>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
+    <div class="container-fluid">
+        <div class="row justify-content-between align-items-center w-100">
+
+            <div class="col-auto">
+                <a class="navbar-brand text-white" href="index.html" aria-label="Ana Sayfa">
+                    <svg width="112" height="45" viewBox="0 0 112 45" xmlns="http://www.w3.org/2000/svg" fill="#111">
+                        <!-- logo path olduğu gibi bırakıldı -->
+                        <path d="M2.51367 34.9297C2.58398 34.6836 ... 95.7396Z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="col-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Menüyü Aç">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                     aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menü</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Kapat"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="dropdownHome" data-bs-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Ana Sayfa</a>
+                                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Ana Sayfa Düzeni 1</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Ana Sayfa Düzeni 2</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Ana Sayfa Düzeni 3</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Ana Sayfa Düzeni 4</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownShop" data-bs-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Mağaza</a>
+                                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Mağaza (Yan Menü)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Mağaza (3 Sütun)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Mağaza (3 Sütun - Geniş)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Mağaza (4 Sütun)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Mağaza (4 Sütun - Geniş)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Mağaza (6 Sütun)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Mağaza (6 Sütun - Geniş)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Ürün Detayı</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Ürün Detayı V2</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Blog Klasik</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Blog Izgara (Yan Menü)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Blog Izgara (4 Sütun)</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Blogsuz Izgara</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Blog Sağ Yan Menü</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Tek Yazı</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Tek Yazı (Yan Menüsüz)</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownPages" data-bs-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">Sayfalar</a>
+                                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownPages">
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Hakkımızda</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Sepet</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Ödeme</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Yakında</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">İletişim</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Hata Sayfası</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">SSS</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Hesabım</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">Sipariş Takibi</a></li>
+                                    <li><a href="index.html" class="dropdown-item item-anchor">İstek Listesi</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 col-lg-auto">
+                <ul class="list-unstyled d-flex m-0">
+                    <li class="d-none d-lg-block">
+                        <a href="index.html" class="text-uppercase mx-3">
+                            İstek Listesi <span class="wishlist-count">(0)</span>
+                        </a>
+                    </li>
+                    <li class="d-none d-lg-block">
+                        <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                           aria-controls="offcanvasCart">
+                            Sepet <span class="cart-count">(0)</span>
+                        </a>
+                    </li>
+                    <li class="d-lg-none">
+                        <a href="#" class="mx-2" aria-label="İstek Listesi">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use xlink:href="#heart"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="d-lg-none">
+                        <a href="#" class="mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                           aria-controls="offcanvasCart" aria-label="Sepeti Aç">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use xlink:href="#cart"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="search-box" class="mx-2">
+                        <a href="#search" class="search-button" aria-label="Arama">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</nav>

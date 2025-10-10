@@ -1,0 +1,48 @@
+﻿@model List<GetSubscribersQueryResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+
+@{
+    int count = 0;
+}
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <div class="row">
+                <div class="col">
+                    <h4>Aboneler</h4>
+                </div>
+                <div class="col text-end">
+                    <a href="/Admin/Service/CreateService" class="btn btn-primary ">Yeni Hizmet</a>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-bordered">
+
+            <tr>
+                <th>#</th>
+                <th>Mail</th>
+                <th>Tarih</th>
+                <th>Durum</th>
+                <th>İşlemler</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <th>@count</th>
+                    <td>@item.Mail</td>
+                    <td>@item.SubscribedTime</td>
+                    <td>@item.IsSubscribed</td>
+                    <td>
+                        <a href="/Admin/Subscriber/Unsubscribe/@item.SubscriberId" class="btn btn-warning">Pasif Yap</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

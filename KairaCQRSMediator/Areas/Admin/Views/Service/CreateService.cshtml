@@ -1,0 +1,31 @@
+﻿@model CreateServiceCommand
+@{
+    ViewData["Title"] = "CreateService";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<div class="card-body">
+    <h5 class="card-title fw-semibold mb-4">Hizmet Ekleme</h5>
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">İkon</label>
+                    <input type="text" asp-for="Icon" class="form-control">
+                    <span asp-validation-for="Icon" class="form-text text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Başlık</label>
+                    <input type="text" asp-for="Title" class="form-control">
+                    <span asp-validation-for="Title" class="form-text text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Açıklama</label>
+                    <input type="text" asp-for="Description" class="form-control">
+                    <span asp-validation-for="Description" class="form-text text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>

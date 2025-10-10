@@ -1,0 +1,27 @@
+﻿@model CreateSocialMediaCommand
+@{
+    ViewData["Title"] = "CreateSocialMedia";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+<div class="card-body">
+    <h5 class="card-title fw-semibold mb-4">Sosyal Medya Ekleme</h5>
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">Sosyal Medya İkon</label>
+                    <input type="text" asp-for="Icon" class="form-control">
+                    <span asp-validation-for="Icon" class="form-text text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Sosyal Medya Linki</label>
+                    <input type="text" asp-for="Link" class="form-control">
+                    <span asp-validation-for="Link" class="form-text text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>
+

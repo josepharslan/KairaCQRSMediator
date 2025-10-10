@@ -1,0 +1,46 @@
+﻿@model List<GetTestimonialQueryResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+@{
+    int count = 0;
+}
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <div class="row">
+                <div class="col">
+                    <h4>Referanslar</h4>
+                </div>
+                <div class="col text-end">
+                    <a href="/Admin/Testimonial/CreateTestimonial" class="btn btn-primary">Referans Ekle</a>
+                </div>
+            </div>
+        </div> 
+
+        <table class="table table-bordered">
+
+            <tr>
+                <th>#</th>
+                <th>Ad Soyad</th>
+                <th>Yorum</th>
+                <th>İşlemler</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <th>@count</th>
+                    <td>@item.NameSurname</td>
+                    <td>@item.Comment</td>
+                    <td>
+                        <a href="/Admin/Testimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-warning">Güncelle</a>
+                        <a href="/Admin/Testimonial/DeleteTestimonial/@item.TestimonialId" class="btn btn-danger">Sil</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

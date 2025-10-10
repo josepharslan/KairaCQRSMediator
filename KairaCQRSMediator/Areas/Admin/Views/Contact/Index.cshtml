@@ -1,0 +1,47 @@
+﻿@model List<GetContactQueryResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Layout/Index.cshtml";
+}
+
+@{
+    int count = 0;
+}
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <div class="row">
+                <div class="col">
+                    <h4>İletişim</h4>
+                </div>
+                <div class="col text-end">
+                    <a href="/Admin/Contact/CreateContact" class="btn btn-primary ">Yeni İletişim Bilgisi</a>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-bordered">
+
+            <tr>
+                <th>#</th>
+                <th>Mail Adresi</th>
+                <th>Telefon Numarası</th>
+                <th>İşlemler</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                count++;
+                <tr>
+                    <th>@count</th>
+                    <td>@item.Mail</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>
+                        <a href="/Admin/Contact/UpdateContact/@item.ContactInfoId" class="btn btn-warning">Güncelle</a>
+                        <a href="/Admin/Contact/DeleteContact/@item.ContactInfoId" class="btn btn-danger">Sil</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+

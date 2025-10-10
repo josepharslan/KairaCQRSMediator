@@ -1,0 +1,18 @@
+﻿ @model List<GetContactQueryResult>
+@foreach (var item in Model)
+{
+    <div class="col-md-3 col-sm-6">
+        <div class="footer-menu footer-menu-004 border-animation-left">
+            <h5 class="widget-title text-uppercase mb-4">Bize Ulaşın</h5>
+            <p>
+                Herhangi bir sorunuz olursa sorabilirsiniz. <a href="mailto:@item.Mail"
+                                                               class="item-anchor">@item.Mail</a>
+            </p>
+            <p>
+                Yardıma ihtiyacınız olursa arayabilirsiniz. <a href="#" class="item-anchor">
+                    @item.PhoneNumber
+                </a>
+            </p>
+        </div>
+    </div>
+}
